@@ -8,16 +8,25 @@ function App() {
     <ImageEditor
       includeUI={{
         loadImage: {
-          path: 'img/sampleImage.jpg',
           name: 'SampleImage',
         },
-        menu: ['shape', 'filter'],
+        menu: [
+          'crop',
+          'flip',
+          'rotate',
+          'draw',
+          'shape',
+          'icon',
+          'text',
+          'mask',
+          'filter',
+        ],
         initMenu: 'filter',
         uiSize: {
           width: '1000px',
           height: '700px',
         },
-        menuBarPosition: 'bottom',
+        menuBarPosition: 'right',
       }}
       cssMaxHeight={500}
       cssMaxWidth={700}
