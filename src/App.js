@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import 'tui-image-editor/dist/tui-image-editor.css';
 import ImageEditor from '@toast-ui/react-image-editor';
+import { whiteTheme } from './theme/white-theme';
 
 function App() {
   const editorRef = React.createRef();
@@ -36,12 +37,13 @@ function App() {
             height: '700px',
           },
           menuBarPosition: 'right',
+          theme: whiteTheme,
         }}
         cssMaxHeight={500}
         cssMaxWidth={700}
         selectionStyle={{
-          cornerSize: 20,
-          rotatingPointOffset: 70,
+          cornerSize: 50,
+          rotatingPointOffset: 100,
         }}
         usageStatistics
       />
