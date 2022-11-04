@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import 'tui-image-editor/dist/tui-image-editor.css';
 import TuiImageEditor from 'tui-image-editor';
-import { whiteTheme } from '../theme/white-theme';
+import { editorOptions } from '../theme/editor-option';
 import * as Styled from '../styles/FlexImageEditor.style';
 
 const getNumber = (value) => Number(value.replace('px', ''));
@@ -20,43 +20,14 @@ const useEditor = () => {
     if (!ref.current) {
       return;
     }
-    const tuiEditor = new TuiImageEditor(ref.current, {
-      includeUI: {
-        loadImage: {
-          name: 'SampleImage',
-        },
-        uiSize: {
-          width: '100%',
-          height: '650px',
-        },
-        menu: [
-          'crop',
-          'flip',
-          'rotate',
-          'draw',
-          'shape',
-          'icon',
-          'text',
-          'mask',
-          'filter',
-        ],
-        menuBarPosition: 'right',
-        theme: whiteTheme,
-      },
-      cssMaxWidth: 1200,
-      cssMaxHeight: 800,
-      selectionStyle: {
-        cornerSize: 20,
-        rotatingPointOffset: 70,
-      },
-    });
+    const tuiEditor = new TuiImageEditor(ref.current, editorOptions);
     console.log(tuiEditor);
   }, []);
 
   return ref;
 };
 
-function FlexImageEditor() {
+const FlexImageEditor = (): JSX.Element => {
   const rootEl = useEditor();
   const maxZoom = 2;
   const minZoom = 0.5;
@@ -127,6 +98,6 @@ function FlexImageEditor() {
       <div ref={rootEl} />
     </>
   );
-}
+};
 
 export default FlexImageEditor;
