@@ -1,8 +1,5 @@
 import Styled from 'styled-components';
 
-export const PR = Styled.div`
-`;
-
 export const Zoom = Styled.div`
   position: absolute;
   right: 20rem;
