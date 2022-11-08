@@ -3,6 +3,7 @@ import 'tui-image-editor/dist/tui-image-editor.css';
 import TuiImageEditor from 'tui-image-editor';
 import { editorOptions } from '../theme/editor-option';
 import { getNumber, resizeElement } from './ZoomSetting';
+import { addEditorMenu } from './PresetSetting';
 import FlexImageEditor from '../components/FlexImageEditor';
 
 const useEditor = () => {
@@ -13,6 +14,9 @@ const useEditor = () => {
     }
     const tuiEditor = new TuiImageEditor(ref.current, editorOptions);
     console.log(tuiEditor);
+
+    const menuQuery = document.querySelector('.tui-image-editor-menu');
+    addEditorMenu(menuQuery);
   }, []);
 
   return ref;
