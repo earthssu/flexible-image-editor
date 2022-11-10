@@ -11,7 +11,16 @@
 .preset-box {
   width: 80%;
   height: 5.5rem;
+  position: relative;
   background-color: aqua;
+  cursor: pointer;
+}
+
+.preset-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .preset-add-button {
@@ -20,4 +29,6 @@
   background-color: #e2e2e2;
   border-radius: 0.4rem;
   line-height: 2rem;
+  font-weight: bold;
+  cursor: pointer;
 }

@@ -3,7 +3,12 @@ import 'tui-image-editor/dist/tui-image-editor.css';
 import TuiImageEditor from 'tui-image-editor';
 import { editorOptions } from '../theme/editor-option';
 import { getNumber, resizeElement } from './ZoomSetting';
-import { addEditorMenu, addSubMenu, openPresetMenu } from './PresetSetting';
+import {
+  addEditorMenu,
+  addSubMenu,
+  openPresetMenu,
+  applyPresetButton,
+} from './PresetSetting';
 import FlexImageEditor from '../components/FlexImageEditor';
 
 const useEditor = () => {
@@ -20,6 +25,7 @@ const useEditor = () => {
     const subMenuQuery = document.querySelector('.tui-image-editor-submenu');
     addSubMenu(subMenuQuery);
     openPresetMenu();
+    applyPresetButton(tuiEditor);
   }, []);
 
   return ref;
