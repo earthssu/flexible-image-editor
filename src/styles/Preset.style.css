@@ -1,0 +1,23 @@
+.preset-menu {
+  color: #bababa;
+  font-size: 0.7rem;
+}
+
+.preset-submenu-layout {
+  background-color: transparent;
+  height: 100%;
+}
+
+.preset-box {
+  width: 80%;
+  height: 5.5rem;
+  background-color: aqua;
+}
+
+.preset-add-button {
+  width: 80%;
+  height: 2rem;
+  background-color: #e2e2e2;
+  border-radius: 0.4rem;
+  line-height: 2rem;
+}
