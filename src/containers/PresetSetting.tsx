@@ -1,13 +1,13 @@
 import '../styles/Preset.style.css';
 
-export const addEditorMenu = (query) => {
+export const addEditorMenu = (query: Element) => {
   const menuElement =
     '<li tooltip-content="Preset" class="tie-btn-filter tui-image-editor-item normal preset-menu">PRESET</li>';
 
   query.insertAdjacentHTML('beforeend', menuElement);
 };
 
-export const addSubMenu = (query) => {
+export const addSubMenu = (query: Element) => {
   let subElement = '<div class="tui-image-editor-menu-preset">';
   subElement +=
     '<ul class="tui-image-editor-submenu-item preset-submenu-layout">';
