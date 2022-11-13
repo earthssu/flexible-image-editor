@@ -12,7 +12,7 @@
   width: 80%;
   height: 5.5rem;
   position: relative;
-  background-color: aqua;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -21,6 +21,27 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#preset-first {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url('https://ifh.cc/g/6S2MVC.jpg');
+  background-size: cover;
+}
+
+#preset-second {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url('https://ifh.cc/g/CtNg0Q.jpg');
+  background-size: cover;
 }
 
 .preset-add-button {
