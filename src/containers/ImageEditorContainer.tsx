@@ -8,6 +8,7 @@ import {
   addSubMenu,
   openPresetMenu,
   applyPresetButton,
+  addPresetOption,
 } from './PresetSetting';
 import FlexImageEditor from '../components/FlexImageEditor';
 
@@ -26,6 +27,7 @@ const useEditor = () => {
     addSubMenu(subMenuQuery);
     openPresetMenu();
     applyPresetButton(tuiEditor);
+    addPresetOption(tuiEditor);
   }, []);
 
   return ref;
