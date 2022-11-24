@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# 🖼 주제
+<b>HTML5 기반 온라인 이미지 Editing 솔루션</b><br />
+<b>(HTML5-based online image editing solution)</b>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🔎 연구 배경
+최신 스마트 장비의 발달과 브라우저 성능 향상에 따라 웹애플리케이션 개발에 많은 관심이 모이고 있다. 또한, 스마트 장비를 사용하는 사용자들의 만족도를 향상시켜줄 수 있는 다양한 콘텐츠의 요구가 늘어나고 있으며, 이와 비례하여 <b>모바일과 웹 양쪽 모두 접근하기 편리한 애플리케이션의 개발이 증가하고 있다.</b><br />
+기존 이미지 편집 도구는 ‘그림판', ‘포토샵' 등 데스크탑에서만 이용 가능한 프로그램이었으며, 해당 프로그램이 설치되어 있지 않은 경우 편집 도구에 대한 접근이 거의 불가능하였다.<br />
+최근 브라우저의 발달에 따라, 온라인 상에서도 누구나 편리하게 이미지 편집 기능 사용할 수 있도록 제공하는 애플리케이션이 출시되고 있다. 그러나 해당 애플리케이션의 경우 <b>웹 디바이스에 최적화되어 있어, 모바일에서 접근하기엔 여전히 한계가 존재한다.</b> 또한, <b>각 이미지에 따른 적절한 보정값을 제공해주지 않아 처음 이미지 편집을 접하는 사용자의 경우 만족스러운 결과물을 도출해내기까지 오랜 시간이 걸릴 가능성이 있다.</b><br />
+이를 해결하고자, <b>다양한 디바이스에서 접근 가능하며 동적인 편집 기능을 제공할 수 있으며, 이미지 특성에 맞는 보정값 프리셋을 제공하는 HTML5 기반의 온라인 편집 도구를 개발하고자 한다.</b>
 
-## Available Scripts
+# 👩‍🔬 연구 내용
+## 관련 연구
+<b>[HTML5](https://developer.mozilla.org/en-US/docs/MDN/Community/Contributing/Translated_content#active_locales)</b><br />
+<b>[Typescript](https://www.typescriptlang.org/docs/)</b><br />
+<b>[React.js](https://ko.reactjs.org/)</b><br />
+<b>[TOAST Image Editor](https://github.com/nhn/tui.image-editor)</b><br />
 
-In the project directory, you can run:
+## 중요성/독창성
+1. <b>다양한 디바이스에서 쉽게 접근할 수 있도록 애플리케이션의  UI의 레이아웃을 구성한다.</b> 디바이스의 크기에 따라 편집 탭을 팝업 형식으로 변경하여 효율적인 레이아웃을 설계할 수 있다. <br />
+2. <b>각 이미지 특성에 맞는 적절한 기본 보정값을 제공한다.</b> 예를 들어 풍경, 음식 등 각각의 테마에 맞는 보정값을 사용자에게 제시하고, 이를 유동적으로 조절할 수 있게 함으로써 사용자는 편집 도구를 더욱 편리하게 사용할 수 있다. 또한, <b>각 사용자가 직접 지정한 사용자 맞춤 보정값을 저장할 수 있게 함</b>으로써 매번 같은 비율의 보정값을 일일이 조정할 필요 없이 쉽고 빠르게 편집을 완료할 수 있도록 한다. <br />
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 🎉 적용 화면
